@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Diagram Quiz</title>
+
+    <!-- Cache-Control meta tags to prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Link to stylesheet with query string to force reload -->
+    <link rel="stylesheet" href="styles.css?v=1.0.1">
+</head>
+<body>
+    <header>
+        <h1>ALP45 Diagram Quiz</h1>
+    </header>
+    <main>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <p>Click on the correct area of the diagram as instructed at the top of the screen. If you select the wrong area, it will move to the next label and record the error.</p>
+            <p>At the end of the quiz, you’ll see a summary of your performance, including missed labels. Hover over missed labels in the list to see their locations highlighted on the diagram.</p>
+        </section>
+        <section class="quiz">
+            <p id="question" class="question"></p>
+            <div id="diagram-container" class="diagram-container">
+                <img id="diagram" src="https://pl42ac.github.io/ALP46/ALP46WEB.png" alt="Diagram">
+            </div>
+            <p id="feedback" class="feedback"></p>
+        </section>
+    </main>
+
+    <!-- Link to script with query string to force reload -->
+    <script src="script.js?v=1.0.1"></script>
+</body>
+</html>
